@@ -1,0 +1,443 @@
+/*google font cdn link*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.nav_list h4{
+  color: #008ebd;
+  font-size: 14px;
+  font-weight: bold;
+}
+.sidebar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background: white;
+  padding: 6px 14px;
+  box-shadow: 0px 0px 20px #d4d4d4;
+  overflow: hidden;
+}
+.sidebar:hover{
+  overflow-y: scroll;
+}
+.sidebar .logo_content .logo{
+  color: #0072bc;
+  display: flex;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+}
+.logo_content .logo i{
+  font-size: 30px;
+  margin-right: 5px;
+}
+.logo_content .logo .logo_name{
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.logo_content .logo .logo_name span{
+  font-size: 30px;
+  font-weight: bold;
+  /*background : linear-gradient(#000046, #1cb5e0);*/
+  background: -webkit-linear-gradient(#eee, #0072bc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sidebar #btn{
+  position: absolute;
+  color: #0072bc;
+  left: 90%;
+  top: 6px;
+  font-size: 14px;
+  height: 20px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  transform: translateX(-50%); 
+}
+.sidebar ul{
+  margin-top: 20px;
+}
+.sidebar ul li{
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin: 0 5px;
+  list-style: none;
+  line-height: 50px;
+}
+.sidebar ul li span{
+  font-size: 14px;
+}
+.sidebar ul li a{
+  color: #0072bc;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+  height: 40px;
+}
+.sidebar ul li a:hover{
+  color: #0072bc;
+  background: #ccebff;
+}
+.sidebar ul li a i{
+  height: 50px;
+  min-width: 50px;
+  border-radius: 12px;
+  line-height: 50px;
+  text-align: center;
+}
+.desc{
+  font-size: 14px;
+  color: #789FC3; 
+  text-align: justify;
+  line-height: 1.6;
+}
+.home_content{
+  position: absolute;
+  height: 100%;
+  width: calc(100% - 200px);
+  left: 200px;
+  overflow-y: scroll;
+}
+.home_content .text{
+  font-size: 25px;
+  font-weight: 500;
+  margin: 20px;
+}
+
+
+
+::-webkit-scrollbar{
+  width: 5px;
+}
+::-webkit-scrollbar-track{
+  background: transparent !important;
+}
+::-webkit-scrollbar-thumb{
+  background: #0072bc;
+  border-radius: 10px;
+}
+/*color*/
+#banner{
+  color: black;
+  padding: 2px;
+}
+.promo-title{
+  margin-top: 20px;
+  margin-bottom: 2px;
+  font-size: 25px;
+  color: #0072bc;
+  text-decoration: bold;
+}
+
+.colors{
+  margin-top: 5px;
+}
+.colors-row img{
+  margin-top: 15px;
+  width: 125px;
+}
+.colors-row img:hover {
+  transform: translateY(-5px);
+}
+
+.colors-row img{
+  &::after {
+    clear: both;
+  }
+}
+.row {
+  /*min-height:10rem;*/
+  /*background-color:rgba(0,0,0,0.1)*/
+}
+.row>.col,.bd-example-row .row>[class^="col-"]{
+  padding-top:.2rem;
+  padding-bottom:.2rem;
+  background-color: #fff;
+  border:1px solid #e3e3e3;
+  color: #0072bc;
+  text-align: center;
+  overflow: hidden;
+}
+.bd-example-row .row+.row{
+  margin-top:0.6rem
+}
+.bd-example-row-flex-cols .row{
+  min-height:8rem;
+  background-color: #0072bc;
+}
+.code{
+  margin: 40px;
+  background-color: #f2f2f2;
+  width: calc(100% - 240px); 
+  height: 150px;
+  overflow-y: scroll;
+  border-radius: 15px;
+}
+#codecode{
+ border: 1px solid #e3e3e3;
+ padding: 10px;
+ box-shadow: 3px 5px 4px #e3e3e3;
+}
+.title{
+  margin-top: 10px;
+  font-size: 16px;
+  color: #0072bc;
+  text-decoration: bold;
+  margin-bottom: 10px;
+}
+
+
+pre .bt  {color: #181818;} /* <> */
+pre .anc {color: #f92672;} /* anchor tag */
+pre .att {color: #13A734;} /* attribute */
+pre .val {color: #F8B430;} /* value */
+pre .com {color: #B8B7B7;} /* value */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+button{
+  height: 200px;
+  width: 350px;
+  color: white;
+  margin-bottom: 30px;
+  /*padding: 100px;*/
+  /*background-color: #0072bc;*/
+  /*background: linear-gradient(to bottom right, #0072bc 28%, #99ccff 100%);*/
+}
+.row .col .fa{
+  margin: 12px;
+}
+.row .col .text{
+  margin: auto;
+  text-align: center;
+}
+.cdn{
+  background-color: #ccebff;
+  border-radius: 8px;
+  height: 30px;
+  text-align: center;
+  margin: auto;
+}
+/*mbak el*/
+.cmpt{
+  width: 350px;
+  box-shadow: 3px 4px 4px #acacac;
+  margin: 0px 50px 50px 50px;
+}
+
+.img-center{
+ text-align: center;
+}
+.brd{
+ border-radius: 30%!important;
+}
+.clr{
+ color: #0072bc!important;
+}
+.bg-clr{
+ background-color: #0072bc!important;
+}
+.component{
+  width: 60%!important;
+}
+.tp-brd{
+  border-radius: 15px;
+}
+
+/*ikha*/
+/*avatar*/
+.avatar-img{
+  margin-left: 50px;
+}
+.avatar-img img{
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.avatar-img img:hover {
+  transform: translateY(-3px);
+}
+
+.avatar-img img{
+  &::after {
+    clear: both;
+  }
+}
+
+/*button*/
+
+.card-body h6{
+  color: #0072bc;
+}
+
+.button img{
+  margin-top: 10px;
+  margin-left: 45px;
+}
+
+
+/*dropdown*/
+.dropdown .btn {
+  margin-top: 10px;
+  display:block;
+  width:38%;
+  text-align: left;
+  /*overflow:hidden*/
+}
+.dropdown select {
+  /*cursor: pointer;*/
+  width: 38%;
+  opacity: 0;
+  position: absolute;
+/*  top:0; 
+  left:0;
+  min-height: 100%;*/
+}
+
+/* these values below will need to be adjusted if you change the padding on bootstrap buttons */
+.dropdown .dropdown-toggle:after {  
+ /* display:inline-block;
+ position: absolute;*/
+ margin-left: 300px;
+ top: 50%;
+ margin-top: -1px; 
+}
+
+.dropdown .btn-lg.dropdown-toggle:after {
+  margin-left: 305px;
+  top: 50%;
+  margin-top: -2px; 
+}
+.dropdown .btn-sm.dropdown-toggle:after {
+  margin-left: 330px;
+}
+
+.container .dropdown img{
+  margin-top: 10px;
+}
+
+/*card*/
+
+.card{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 300px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 30px #555;
+}
+
+.card .front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transition: .4s;
+}
+
+.card .front:after{
+  content: "last minute";
+  width: 200px;
+  background: red;
+  position: absolute;
+  right: -66px;
+  top: 6px;
+  transform: rotate(45deg);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: .4s;
+}
+
+.card:hover .front:after{
+  opacity: 0;
+}
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 5px;
+  display: table;
+  opacity: 0;
+  transition: .4s;
+  transform: translateY(100%);
+}
+
+.card .front .title-front-card{
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: .3s;
+
+}
+
+.back span{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.back span ul{
+  padding-left: 0;
+}
+.back span ul li{
+  display: inline-block;
+  font-size: 32px;
+  margin: 10px
+}
+
+.card:hover .back{
+  opacity: 1;
+  transform: translateY(0);
+  background: rgba(0,0,0,0.8);
+}
+
+.card:hover .front{
+
+  transform: scale(1.15);
+}
+.card:hover .title-front-card{
+  opacity: 0;
+}
